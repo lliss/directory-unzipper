@@ -34,6 +34,8 @@ def main():
                     os.remove(the_file)
             except zipfile.BadZipfile as ex:
                 print('ERROR -- INVALID ZIP FILE: ', ex, '--', os.path.basename(the_file))
+            except FileNotFoundError as ex:
+                print('ERROR -- COULD NOT EXTRACT: ', ex, '--', os.path.basename(the_file))
 
 
 if __name__ == '__main__':
