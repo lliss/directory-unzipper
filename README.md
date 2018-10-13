@@ -42,6 +42,16 @@ For those on POSIX based systems, the `dirunzip` script can be made executable a
 
 from anywhere on the system. This greatly simplifies the use.
 
+## Help
+
+Running:
+
+```
+dirunzip.py --help
+```
+
+will result in basic helptext.
+
 ## Versions and support
 
 This has been test on Windows, MacOS, and Linux in Python versions 2 and 3. Python 3 produces better output messages but the functionality is otherwise identical.
